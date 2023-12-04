@@ -1,0 +1,43 @@
+// Import the custom styles and mixins
+@use '../custom' as *;
+@import '../components/mixins';
+
+.menu {
+    @include gradient;
+
+    li {
+        padding: 0px 11.5px;
+    }
+
+    a {
+        color: $white !important;
+        text-transform: capitalize;
+        font-weight: bold;
+    }
+
+    // $navbar-toggler-icon-color: $primary;
+    // $navbar-toggler-icon-active-color: $secondary;
+    // $navbar-toggler-button-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-filter-circle-fill' viewBox='0 0 16 16'%3E%3Cpath d='M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M3.5 5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1 0-1M5 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E");
+    // $navbar-toggler-button-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-filter-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16'/%3E%3Cpath d='M7 11.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5'/%3E%3C/svg%3E");
+    // $navbar-toggler-icon-width: 30px;
+
+    // .navbar-toggler-icon.collapsed::before,
+    // .navbar-toggler-icon::before {
+    //     content: "";
+    //     display: inline-block;
+    //     width: $navbar-toggler-icon-width;
+    //     height: $navbar-toggler-icon-width; // You can adjust this as needed
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    // }
+
+    // .navbar-toggler-icon.collapsed::before {
+    //     background-image: $navbar-toggler-button-icon;
+    //     background-color: $navbar-toggler-icon-color;
+    // }
+
+    // .navbar-toggler-icon::before {
+    //     background-image: $navbar-toggler-button-active-icon;
+    //     background-color: $navbar-toggler-icon-active-color;
+    // }
+}

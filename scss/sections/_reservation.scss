@@ -1,0 +1,12 @@
+#reservation .form-control{
+    border-radius: 0;
+}
+
+#reservation .form-control:focus {
+    box-shadow: none;
+    border-color: green;
+}
+
+#reservation input.form-control {
+    height: 47px;
+}

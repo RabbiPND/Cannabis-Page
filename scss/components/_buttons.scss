@@ -1,0 +1,43 @@
+@use '../custom' as *;
+@import '../components/mixins';
+
+.btn-rounded {
+    position: relative;
+    padding: 5px 40px 5px 10px;
+    font-weight: bold;
+    border: 1.6px solid rgb($white, 0.6);
+    background-color: $white;
+    display: block;
+    margin-bottom: $gap; 
+
+    &:hover {
+        @include gradient;
+        color: $white;
+
+        span {
+            background-color: rgb($black, 0.6);
+        }
+    }
+
+    @media (min-width: 960px) {
+        display: inline-flex; /* Use inline-flex to make the buttons display horizontally */
+        margin-right: $gap; /* Add right margin between buttons */
+    }
+
+    span {
+        position: absolute;
+        background-color: $primary;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        border-radius: 50%;
+
+        i {
+            color: $white;
+            font-size: 15px;
+            line-height: 5px;
+        }
+    }
+}

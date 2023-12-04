@@ -1,0 +1,43 @@
+.intro-text {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.intro-text p {
+  max-width: 500px;
+  margin: 16px auto 0 auto;
+}
+
+.menu-item {
+  height: 100%;
+}
+
+.menu-pics {
+  max-width: 100%;
+  height: auto;
+}
+
+#menu .nav-pills .nav-link {
+  background-color: white;
+  margin: 0px 8px;
+  color: black;
+  border-radius: 50%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-on-hover {
+  transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+  box-shadow:0 10px 40px rgba(0, 0, 0, 0.1); 
+}
+
+#menu .nav-pills .nav-link.active {
+  background-color: green;
+  color: white;
+}
+
+.ri-star-fill {
+    color: green;
+  }
