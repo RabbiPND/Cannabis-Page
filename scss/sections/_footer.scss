@@ -1,12 +1,61 @@
-footer {
-    .footer-top {
-    background-color: black;
-      color: red;  // Set text color to ensure readability
-      text-align: center;  // Center content
-    }
-  
-    h2, p {
-      margin: 0;  
+@use "../custom" as *;
+@import "../components/mixins";
+
+.footer {
+  padding-top: 16px;
+  background-color: black;
+}
+
+.contact-box {
+  position: relative;
+
+  &__icon {
+    width: 32px;
+    stroke: green;
+
+    @include media-breakpoint-up(sm) {
+      width: 64px;
     }
   }
-  
+
+  &__info {
+    padding: 6px;
+    font-weight: bold;
+    padding-top: 8px;
+
+    &--title {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+      }
+
+      &--subtitle {
+        color: grey;
+        text-decoration: none;
+        font-size: 13px;
+
+        @include media-breakpoint-up(sm) {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+.footer-sm {
+  a {
+    color: white;
+
+    i {
+      font-size: 16px;
+      margin-left: 16px;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 25px;
+      }
+    }
+  }
+}

@@ -12031,13 +12031,60 @@ textarea.form-control-lg {
   height: 47px;
 }
 
-footer .footer-top {
+.footer {
+  padding-top: 16px;
   background-color: black;
-  color: red;
-  text-align: center;
 }
-footer h2, footer p {
-  margin: 0;
+
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  width: 32px;
+  stroke: green;
+}
+@media (min-width: 576px) {
+  .contact-box__icon {
+    width: 64px;
+  }
+}
+.contact-box__info {
+  padding: 6px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.contact-box__info--title {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+@media (min-width: 576px) {
+  .contact-box__info--title {
+    font-size: 18px;
+  }
+}
+.contact-box__info--title--subtitle {
+  color: grey;
+  text-decoration: none;
+  font-size: 13px;
+}
+@media (min-width: 576px) {
+  .contact-box__info--title--subtitle {
+    font-size: 15px;
+  }
+}
+
+.footer-sm a {
+  color: white;
+}
+.footer-sm a i {
+  font-size: 16px;
+  margin-left: 16px;
+}
+@media (min-width: 576px) {
+  .footer-sm a i {
+    font-size: 25px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
