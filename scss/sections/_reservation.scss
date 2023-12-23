@@ -1,12 +1,18 @@
-#reservation .form-control{
-    border-radius: 0;
+#reservation .form-control {
+  border-radius: 0;
 }
 
 #reservation .form-control:focus {
-    box-shadow: none;
-    border-color: green;
+  box-shadow: none;
+  border-color: green;
 }
 
 #reservation input.form-control {
-    height: 47px;
+  height: 47px;
+}
+
+#reservation {
+  margin: 200px 0px;
+  border: 1px dotted green; /* Set the border width and color */
+  padding: 5px; /* Optional: Add padding for better visibility */
 }

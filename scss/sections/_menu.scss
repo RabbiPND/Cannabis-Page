@@ -9,12 +9,20 @@
 }
 
 .menu-item {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .menu-pics {
-  max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu-item-content {
+  margin-top: 10px;
 }
 
 #menu .nav-pills .nav-link {
@@ -30,7 +38,7 @@
 }
 
 .shadow-on-hover:hover {
-  box-shadow:0 10px 40px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 #menu .nav-pills .nav-link.active {
@@ -39,5 +47,21 @@
 }
 
 .ri-star-fill {
-    color: green;
+  color: green;
+}
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
+  i {
+    margin: 0 5px; // Adjust the margin as needed for spacing between stars
+  }
+}

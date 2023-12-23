@@ -1,12 +1,28 @@
-@use '../custom' as *;
+@use "../custom" as *;
 
 #about {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 // styles.scss
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  .row {
+    width: 100%;
+    max-width: 800px; // Adjust the max-width as needed
+  }
 
+  .col-lg-6 {
+    text-align: center;
+  }
+}
+
+.center-text {
+  text-align: center;
+}
 // Your custom styles
 #section-counter {
   background-attachment: fixed;
@@ -19,7 +35,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 400px; 
+  height: 400px;
   margin-bottom: 200px;
 
   .container {

@@ -11942,6 +11942,23 @@ textarea.form-control-lg {
   margin-top: 100px;
 }
 
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .row {
+  width: 100%;
+  max-width: 800px;
+}
+#about .col-lg-6 {
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
 #section-counter {
   background-attachment: fixed;
   background-position: center;
@@ -11980,12 +11997,20 @@ textarea.form-control-lg {
 }
 
 .menu-item {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .menu-pics {
-  max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu-item-content {
+  margin-top: 10px;
 }
 
 #menu .nav-pills .nav-link {
@@ -12013,9 +12038,27 @@ textarea.form-control-lg {
   color: green;
 }
 
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-container span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating-container i {
+  margin: 0 5px;
+}
+
 .chef-pics {
   max-width: 100%;
   height: 400px;
+}
+
+#Our-chefs {
+  margin-top: 200px;
 }
 
 #reservation .form-control {
@@ -12029,6 +12072,12 @@ textarea.form-control-lg {
 
 #reservation input.form-control {
   height: 47px;
+}
+
+#reservation {
+  margin: 200px 0px;
+  border: 1px dotted green; /* Set the border width and color */
+  padding: 5px; /* Optional: Add padding for better visibility */
 }
 
 .footer {

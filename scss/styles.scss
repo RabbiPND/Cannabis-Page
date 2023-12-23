@@ -1,16 +1,12 @@
-@use'custom';
+@use "custom";
 
+@use "components/buttons";
+@use "components/mixins";
 
-@use'components/animations';
-@use'components/buttons';
-@use'components/mixins';
-@use'components/typography';
-
-
-@use'sections/navbar';
-@use'sections/home';
-@use'sections/about';
-@use'sections/menu';
-@use'sections/chefs';
-@use'sections/reservation';
-@use'sections/footer';
+@use "sections/navbar";
+@use "sections/home";
+@use "sections/about";
+@use "sections/menu";
+@use "sections/chefs";
+@use "sections/reservation";
+@use "sections/footer";
